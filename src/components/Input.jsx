@@ -4,7 +4,7 @@ import Img from "../img/img.png";
 
 const Input = () => {
   return (
-    <div className="h-20 bg-white p-3 flex items-center justify-between">
+    <div className="h-15 bg-white p-3 flex items-center justify-between">
       <input
         type="text"
         placeholder="Type Something..."

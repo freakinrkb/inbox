@@ -43,7 +43,7 @@ const Messages = () => {
   ];
 
   return (
-    <div className="bg-blue-100 p-10 h-[calc(100vh-120px)] overflow-auto">
+    <div className="bg-yellow-100 p-10 h-[calc(100vh-120px)] overflow-auto">
       {messages.map((message) => (
         <Message
           key={message.id} // Provide a unique key
