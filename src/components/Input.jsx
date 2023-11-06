@@ -4,7 +4,7 @@ import Img from "../img/img.png";
 
 const Input = () => {
   return (
-    <div className="h-15 bg-white p-3 flex items-center justify-between">
+    <div className="h-15 bg-yellow-50 p-3 flex items-center justify-between">
       <input
         type="text"
         placeholder="Type Something..."
@@ -12,16 +12,14 @@ const Input = () => {
       />
       <div className="flex items-center gap-3">
         <img className="h-6 cursor-pointer" src={Attach} alt="" />
-        <label htmlFor="file" className="cursor-pointer">
-          {" "}
-          <img className="h-6 w-6" src={Img} alt="" onLoad={() => console.log('Image loaded')}/>{" "}
-        </label>
+        <label htmlFor="file" className="cursor-pointer relative">
+        <img className="h-6 w-14 " src={Img} alt="" />
         <input
           type="file"
-          className="w-0 h-0"
-          style={{ position: "absolute" }}
           id="file"
+          className="w-0 h-0 absolute top-0 left-0"
         />
+        </label>
         <button className="border-none p-3 text-white bg-indigo-500 cursor-pointer">
           Send
         </button>

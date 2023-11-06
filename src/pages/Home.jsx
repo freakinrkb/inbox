@@ -9,7 +9,7 @@ const Home = () => {
   const [isMessageBoxOpen, setIsMessageBoxOpen] = useState(false);
 
   const updateScreenSize = () => {
-    setIsSmallScreen(window.innerWidth < 640); // Adjust the breakpoint as needed
+    setIsSmallScreen(window.innerWidth < 600); 
   };
 
   useEffect(() => {
@@ -36,3 +36,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
+// ye abhi sure nhi h toh dekh liyoo

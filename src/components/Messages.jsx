@@ -8,48 +8,55 @@ const Messages = () => {
       message: 'Hello, how are you?',
       timestamp: 'early',
       imageUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80',
+      sender: 'sender',
     },
     {
       id: 2,
       message: 'I am doing well, thank you!',
       timestamp: '4 min ago',
       imageUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80',
+      sender: 'receiver',
     },
     {
-      id: 3,
-      message: 'I am doing well, thank you!',
-      timestamp: '3 min ago',
+      id: 1,
+      message: 'Hello, how are you?',
+      timestamp: 'early',
       imageUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80',
+      sender: 'sender',
     },
     {
-      id: 4,
+      id: 2,
       message: 'I am doing well, thank you!',
-      timestamp: '2 min ago',
+      timestamp: '4 min ago',
       imageUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80',
+      sender: 'receiver',
     },
     {
-      id: 5,
-      message: 'I am doing well, thank you!',
-      timestamp: '1 min ago',
+      id: 1,
+      message: 'Hello, how are you?',
+      timestamp: 'early',
       imageUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80',
+      sender: 'sender',
     },
     {
-      id: 6,
+      id: 2,
       message: 'I am doing well, thank you!',
-      timestamp: 'just now',
+      timestamp: '4 min ago',
       imageUrl: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80',
+      sender: 'receiver',
     },
-
+    // Add more messages as needed
   ];
 
   return (
     <div className="bg-yellow-100 p-10 h-[calc(100vh-120px)] overflow-auto">
       {messages.map((message) => (
         <Message
-          key={message.id} // Provide a unique key
+          key={message.id}
           message={message.message}
           timestamp={message.timestamp}
           imageUrl={message.imageUrl}
+          sender={message.sender}
         />
       ))}
     </div>
