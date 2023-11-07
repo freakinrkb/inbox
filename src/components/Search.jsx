@@ -7,7 +7,7 @@ const Search = () => {
         <input
           type="text"
           placeholder="Search Hooks"
-          className="placeholder-gray-500 bg-transparent border-none pl-1 text-black-700 outline-none"
+          className="placeholder-gray-500 bg-transparent border-none pl-3 text-black-700 outline-none"
         />
       </div>
     </div>

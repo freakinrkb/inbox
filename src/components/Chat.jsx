@@ -10,7 +10,7 @@ const Chat = () => {
         <div className="flex gap-3">
         </div>
       </div>
-      <Messages className="h-full sm:h-1" />
+      <Messages className="h-full sm:h-1 overflow-auto no-scrollbar" />
       <Input />
     </div>
   );
